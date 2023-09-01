@@ -13,7 +13,7 @@ https://cses.fi/problemset/result/6019372/
 反之遇到離開就減少
 維護中遇到的最大值就是答案了
 
-![](2023-09-02-04-19-14.png)
+![](https://github.com/dada878/blog/blob/master/2023-09-02-04-19-14.png?raw=true)
 ## 實作
 ```cpp
 #include <bits/stdc++.h>
