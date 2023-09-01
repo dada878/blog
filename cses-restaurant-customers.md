@@ -1,7 +1,7 @@
 # 題解 CSES - Restaurant Customers
 https://cses.fi/problemset/result/6019372/
 ## 題意
-給你 n 位客人的進入和離開餐廳的時間
+給你 n 位客人的進入和離開餐廳的時間 \
 輸出最多同時有幾位客人同時在餐廳
 - n < 2 * 10 ^ 5
 
