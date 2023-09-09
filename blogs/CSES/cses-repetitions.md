@@ -5,7 +5,7 @@ https://cses.fi/problemset/task/1069
 目標是算出同樣的字母最多連續重複幾次
 ## 想法
 把整個字串從左邊往右掃 \
-用一個 $curLen$ 變數維護目前的答案 \
+用一個 $curLen$ 變數維護目前的長度 \
 遇到一個字母時 $curLen$ 加 $1$ \
 如果跟上個字母不同就把 $curLen$ 歸零 \
 每次掃過一個字母再用 $maxLen$ 維護出現過最大的 $curLen$
