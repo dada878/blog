@@ -7,7 +7,8 @@ https://cses.fi/problemset/task/1094/
 ## 想法
 從陣列左邊往右邊掃過去 \
 遇到凹洞就把它填滿 \
-計算總共需要花多少成本 \
+計算總共需要花多少成本
+
 ![](https://github.com/dada878/blog/blob/master/assets/Snipaste_2023-09-09_21-36-33.png?raw=true)
 ## 程式碼
 ```cpp
