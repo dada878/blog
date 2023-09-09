@@ -11,7 +11,8 @@ https://cses.fi/problemset/result/6019372/
 然後用一個變數來維護目前餐廳人數 \
 每次遇到加入就增加 \
 反之遇到離開就減少 \
-維護中遇到的最大值就是答案了
+維護中遇到的最大值就是答案了 \
+時間複雜度：$O(n)$
 
 ![](https://github.com/dada878/blog/blob/master/assets/2023-09-02-04-19-14.png?raw=true)
 ## 實作
