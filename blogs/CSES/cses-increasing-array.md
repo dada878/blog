@@ -1,4 +1,4 @@
-# CSES 題解 - Increasing Array
+# 題解 CSES - Increasing Array
 https://cses.fi/problemset/task/1094/
 ## 題意
 給你一個陣列 \
