@@ -9,7 +9,7 @@ https://cses.fi/problemset/task/1081/
 於是我們可以先用 $cnt$ 陣列紀錄每個數字的出現次數 \
 然後枚舉每個可能的因數 (假設目前枚舉到 k) \
 從 $k$、$2k$、$3k$ $\dots$ 計算陣列中存在多少個倍數 \
-根據[調和級數](/harmonic-series)可以算出時間複雜度為 $O(n \log n)$
+根據[調和級數](./harmonic-series)可以算出時間複雜度為 $O(n \log n)$
 ## 實作
 ```cpp
 #include <bits/stdc++.h>
