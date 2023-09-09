@@ -6,7 +6,7 @@ https://cses.fi/problemset/task/1070/
 使得不存在任意兩個相鄰數字的差為 1
 ## 想法
 把 $n$ 個數字分成 $1 \sim \lfloor \frac{n}{2} \rfloor$ 和 $\lfloor \frac{n}{2}+1 \rfloor \sim n$ 兩堆 \
-並穿插構造 $ans$ 陣列就可以保證任兩數的差大約為 $\frac{n}{2}$ \
+並穿插構造 $ans$ 陣列就可以保證任兩數的差大約為 $\lfloor\frac{n}{2}\rfloor$ \
 最後跑過整個陣列驗證是否合法即可
 
 ![](https://github.com/dada878/blog/blob/master/assets/Snipaste_2023-09-09_21-50-43.png?raw=true)
