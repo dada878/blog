@@ -3,7 +3,7 @@ https://cses.fi/problemset/task/1070/
 ## 題意
 給予一個數字 $n$ \
 你要使用數字 $1 \sim n$ 構造一個陣列 \
-使得不存在任意兩個相鄰數字的差為 1
+使得不存在任意兩個相鄰數字的差為 $1$
 ## 想法
 把 $n$ 個數字分成 $1 \sim \lfloor \frac{n}{2} \rfloor$ 和 $\lfloor \frac{n}{2}+1 \rfloor \sim n$ 兩堆 \
 並穿插構造 $ans$ 陣列就可以保證任兩數的差大約為 $\lfloor\frac{n}{2}\rfloor$ \
