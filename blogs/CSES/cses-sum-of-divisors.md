@@ -1,8 +1,8 @@
 # 題解 CSES - Sum of Divisors
 https://cses.fi/problemset/task/1082/
 ## 題意
-定義 $f(x)$ 為 $x$ 的所有因數之和 \
-給予一個 $n$ 求 $\sum^n_{k=1}f(k)$ 之值
+定義 $\sigma(x)$ 為 $x$ 的所有因數之和 \
+給予一個 $n$ 求 $\sum^n_{k=1}\sigma(k)$ 之值
 ## 想法
 以 $12$ 為例 \
 先看一下這張圖列出了 $1 \sim 12$ 的所有因數
