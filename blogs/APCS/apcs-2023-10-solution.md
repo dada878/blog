@@ -115,6 +115,8 @@ signed main() {
 簡單來說只要對整張圖做 DFS 並一邊維護連通塊大小即可 \
 比較麻煩的地方就是建圖而已 \
 這份程式碼部份參考了 [dreamoon 老師的 code](https://hackmd.io/@aacp/APCS20231022) 才得以把它改得這麼乾淨的 ><
+
+時間複雜度 $O(nm)$
 ### 考點
 圖論、DFS / BFS
 ### 程式碼
@@ -210,6 +212,10 @@ signed main() {
 轉移的部份 $dp[i][j] = \max_{1 \leq l \leq k}(dp[i-l-1][j-l] + val[i])$
 
 最後照著轉移式把程式寫出來就好ㄌ
+
+時間複雜度 $O(n \time k^2)$
+### 考點
+動態規劃
 ### 程式碼
 ```cpp
 #include <bits/stdc++.h>
