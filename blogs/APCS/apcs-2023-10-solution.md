@@ -52,8 +52,12 @@ signed main() {
 
 我比較在意的地方是 \
 本來以為這個動作需要重複多次才能匹配所有牌 \
-結果竟然一次就過了，不知道是不是 ZeroJudge 測資太弱 :thinking: \
-或者其實有辦法證明這個作法最多只需要一次
+結果竟然一次就過了，不知道是不是 ZeroJudge 測資太弱 🤔\
+或者其實有辦法證明這個作法最多只需要一次 \
+[更新]\
+關於這個問題，感謝 [M_SQRT 電神的補充](https://zerojudge.tw/ShowThread?postid=38138&reply=0) \
+確實 Zerojudge 測資有疏失 \
+已加強程式碼！
 ### 考點
 二維陣列、模擬
 ### 程式碼
@@ -74,29 +78,32 @@ signed main() {
         }
     }
     int ans = 0;
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            if (tb[i][j] == -1) continue;
-            // 嘗試往上配對
-            if (i > 0) {
-                int k = i-1;
-                while (k >= 0 && tb[k][j] == -1) k--;
-                if (tb[i][j] == tb[k][j]) {
-                    // 配對成功
-                    ans += tb[i][j]; // 增加分數
-                    tb[i][j] = b[k][j] = -1; // 將兩張牌紀錄乘已匹配
-                    continue; // 匹配成功後即可忽略這張牌
+    // 重複執行匹配動作至少 n*m 次以配對所有卡牌
+    for (int _ = 0; _ < 1000; _++) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (tb[i][j] == -1) continue;
+                // 嘗試往上配對
+                if (i > 0) {
+                    int k = i-1;
+                    while (k >= 0 && tb[k][j] == -1) k--;
+                    if (tb[i][j] == tb[k][j]) {
+                        // 配對成功
+                        ans += tb[i][j]; // 增加分數
+                        tb[i][j] = b[k][j] = -1; // 將兩張牌紀錄乘已匹配
+                        continue; // 匹配成功後即可忽略這張牌
+                    }
                 }
-            }
-            // 嘗試往左配對
-            if (j > 0) {
-                int k = j-1;
-                while (k >= 0 && tb[i][k] == -1) k--;
-                if (tb[i][j] == tb[i][k]) {
-                    // 配對成功
-                    ans += tb[i][j]; // 增加分數
-                    tb[i][k] = tb[i][j] = -1; // 將兩張牌紀錄乘已匹配
-                    continue; // 匹配成功後即可忽略這張牌
+                // 嘗試往左配對
+                if (j > 0) {
+                    int k = j-1;
+                    while (k >= 0 && tb[i][k] == -1) k--;
+                    if (tb[i][j] == tb[i][k]) {
+                        // 配對成功
+                        ans += tb[i][j]; // 增加分數
+                        tb[i][k] = tb[i][j] = -1; // 將兩張牌紀錄乘已匹配
+                        continue; // 匹配成功後即可忽略這張牌
+                    }
                 }
             }
         }
