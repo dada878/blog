@@ -3,7 +3,8 @@
 這次 APCS 跟 ISSC 撞期 \
 然後我就放掉 APCS 跑去打 ISSC : D \
 下一次要慢三天才能報了 qwq
-## [一、機械鼠](https://zerojudge.tw/ShowProblem?problemid=m370)
+## 一、機械鼠
+https://zerojudge.tw/ShowProblem?problemid=m370
 ### 題意
 數線上有一隻老鼠 \
 且有 $n$ 個食物散落在數線上 \
@@ -38,7 +39,8 @@ signed main() {
 }
 
 ```
-## [二、卡牌遊戲](https://zerojudge.tw/ShowProblem?problemid=m371)
+## 二、卡牌遊戲
+https://zerojudge.tw/ShowProblem?problemid=m371
 ### 題意
 在一個 $n \times m$ 大小的表格上每格裡都有一張牌 \
 你可以水平或垂直消除數值為 $x$ 的兩張牌並獲得 $x$ 分，但中間不能有其他牌 \
@@ -111,7 +113,8 @@ signed main() {
     cout << ans << endl;
 }
 ```
-## [三、搬家](https://zerojudge.tw/ShowProblem?problemid=m372)
+## 三、搬家
+https://zerojudge.tw/ShowProblem?problemid=m372
 ### 題意
 一個 $n \times m$ 的表格上每格有一個水管 \
 水管分成 $H、I、F、7、L$ 等類型 \
@@ -197,7 +200,8 @@ signed main() {
     cout << ans << endl;
 }
 ```
-## [四、投資遊戲](https://zerojudge.tw/ShowProblem?problemid=m373)
+## 四、投資遊戲
+https://zerojudge.tw/ShowProblem?problemid=m373
 ### 題意
 題目~~廢話~~劇情就不多寫了 \
 簡單來說就是求最大連續子序列合，但可以跳過 $k$ 個元素
