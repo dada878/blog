@@ -55,7 +55,8 @@ https://zerojudge.tw/ShowProblem?problemid=m371
 我比較在意的地方是 \
 本來以為這個動作需要重複多次才能匹配所有牌 \
 結果竟然一次就過了，不知道是不是 ZeroJudge 測資太弱 🤔\
-或者其實有辦法證明這個作法最多只需要一次 \
+或者其實有辦法證明這個作法最多只需要一次
+
 [更新]\
 關於這個問題，感謝 [M_SQRT 電神的補充](https://zerojudge.tw/ShowThread?postid=38138&reply=0) \
 確實 Zerojudge 測資有疏失 \
@@ -227,6 +228,19 @@ https://zerojudge.tw/ShowProblem?problemid=m373
 最後照著轉移式把程式寫出來就好ㄌ
 
 時間複雜度 $O(n \times k^2)$
+
+[更新]
+
+感謝 Colten 提出了 [更好的作法](https://www.facebook.com/groups/359446638362710/posts/1129557418018291?comment_id=1129629131344453) \
+$dp[i][j]$ 一樣是代表在第 $i$ 天使用 $j$ 個金牌的最佳解 \
+不過轉移的部份只需要對 $dp[i-1][j-1]$ 和 $dp[i-1][j] + val[i]$ 取 $max$ 就可以 \
+兩個狀態分別代表在第 $i$ 天使用和不使用金牌 \
+時間複雜度直接少了一個 $k$ 降到 $O(n \times k)$ \
+下面程式碼也用這個寫法實現
+
+然後根據 [吳邦一教授的說法](https://www.facebook.com/groups/359446638362710/posts/1129557418018291?comment_id=1129640624676637) \
+原本 $O(n \times k^2)$ 的作法如果使用 Python 的話時間應該不會過
+
 ### 考點
 動態規劃
 ### 程式碼
@@ -242,27 +256,22 @@ int dp[200000][30];
 signed main() {
     int n, k;
     cin >> n >> k;
-    for (int i = 1; i <= n; i++) cin >> v[i];
-    for (int i = 1; i <= n; i++) { // 考慮陣列前 i 個元素
-        for (int j = 0; j <= k; j++) { // 只使用 j 個金牌
-            for (int l = 0; l <= k; l++) { // 枚舉現在要使用多少金牌
-                // 跳過超出表格的狀態
-                if (j-l < 0 || i-1-l < 0) continue;
-                // 對所有狀態取 max
-                dp[i][j] = max({dp[i][j], dp[i-l-1][j-l] + v[i], 0LL});
-            }
+    for (int i = 1; i <= n; i++) { // 第 i 天
+        cin >> v[i]; // 因為只會依賴到之前的狀態所以可以邊讀入邊做
+        for (int j = 0; j <= k; j++) { // 使用 j 個金牌
+            if (j > 0) dp[i][j] = dp[i-1][j-1]; // 使用金牌
+            dp[i][j] = max(dp[i][j], dp[i-1][j] + v[i]); // 不使用金牌
         }
     }
     int ans = 0;
-    // 在所有合法狀態中取最大值
+    // 在所有合法狀態中取得最佳解
     for (int i = 0; i <= k; i++) {
         for (int j = 1; j <= n; j++) {
-            ans = max(ans, dp[j][i]);
+            ans = max({ans, dp[j][i], 0LL});
         }
     }
     cout << ans << endl;
 }
-
 ```
 ## 結語
 整體來說 \
