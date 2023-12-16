@@ -129,6 +129,8 @@ AC !
 
 帶走了一個安妮亞滑鼠墊 : D
 
+![](https://github.com/dada878/blog/blob/master/assets/IMG20231209161937.jpg?raw=true)
+
 ## 結語
 整體來說還蠻好玩的 \
 午餐很讚而且也帶了不少戰利品 \
