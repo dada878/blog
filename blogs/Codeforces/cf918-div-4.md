@@ -1,6 +1,6 @@
-# CF 918 Div 4 題解
+# Codeforces 918 Div 4 題解
 ## 前言
-為了慶祝第一次破台所以難得來寫一下題解 \
+為了慶祝第一次在 CF 破台所以難得來寫一下題解 \
 這成績我可以開心一個禮拜了 :> \
 ~~(備註: 我不是紅黑人)~~
 ![](https://github.com/dada878/blog/blob/master/assets/2023-12-29-01-57-27.png?raw=true)
