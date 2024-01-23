@@ -3,7 +3,11 @@
 筆者只是一個滿級的考生 \
 以下內容都是根據個人經驗給出的建議
 ## 考前注意事項
-第一次一定要先下載[官方的虛擬環境](https://apcs.csie.ntnu.edu.tw/index.php/info/environment/)練習 \
+考試名額不多 \
+很快就會被搶完 \
+所以開放報名第一時間記得趕快上去搶
+
+然後第一次應考前一定要先下載[官方的虛擬環境](https://apcs.csie.ntnu.edu.tw/index.php/info/environment/)練習 \
 並且留意自己習慣的編輯器、IDE 有沒有在環境裡面 \
 如果沒有的話就要事先練習好其他軟體的操作方式
 ## 評分方式
