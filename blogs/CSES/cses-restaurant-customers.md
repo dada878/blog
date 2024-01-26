@@ -1,4 +1,4 @@
-# 題解 CSES - Restaurant Customers
+# 題解 CSES Restaurant Customers
 https://cses.fi/problemset/task/1619/
 ## 題意
 給你 n 位客人的進入和離開餐廳的時間 \

@@ -1,4 +1,4 @@
-# 題解 CSES - Repetitions
+# 題解 CSES Repetitions
 https://cses.fi/problemset/task/1069
 ## 題意
 你有一個由 A、C、G、T 組成的字串 \

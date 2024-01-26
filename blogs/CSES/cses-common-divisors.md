@@ -1,4 +1,4 @@
-# 題解 CSES - Common Divisors
+# 題解 CSES Common Divisors
 https://cses.fi/problemset/task/1081/
 ## 題意
 找到兩個數字 \

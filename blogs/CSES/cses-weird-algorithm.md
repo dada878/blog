@@ -1,4 +1,4 @@
-# 題解 CSES - Weird Algorithm
+# 題解 CSES Weird Algorithm
 https://cses.fi/problemset/task/1068
 ## 題意
 給予一個數字 $n$ \

@@ -1,4 +1,4 @@
-# 題解 CSES - Missing Number
+# 題解 CSES Missing Number
 https://cses.fi/problemset/task/1083/
 ## 題意
 給予一堆數字 $1 \sim n$ 但中間缺少了一個 \

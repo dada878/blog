@@ -1,4 +1,4 @@
-# 題解 CSES - Permutations
+# 題解 CSES Permutations
 https://cses.fi/problemset/task/1070/
 ## 題意
 給予一個數字 $n$ \

@@ -1,4 +1,4 @@
-# 題解 CSES - Sum of Divisors
+# 題解 CSES Sum of Divisors
 https://cses.fi/problemset/task/1082/
 ## 題意
 定義 $\sigma(x)$ 為 $x$ 的所有因數之和 \
