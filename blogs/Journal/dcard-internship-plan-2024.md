@@ -67,6 +67,9 @@ git 的部分也整理了一些筆記，不過沒 React 那麼多就是了。
 
 作業的部分他們也提到了我的 blog 頁面的 error handling 沒有做得很好，某個 `promise` 的 `.catch` 後面沒判斷就直接接了 `notFound()`。然後 blog 頁面的 cache miss 掉以及我用 `Map` 實作了奇怪的小 cache 也被抓到，快取的部分真的被問得挺慘的ww
 
+還有因為之前的專案都是 Vue 寫的，所以他們也稍微問了一些關於 Vue 的問題，比如說你覺得 Vue 跟 React 差在哪、更喜歡哪個之類的，
+但其實我現在對 Vue 的了解度應該比 React 還低，這部分也挺慘的。
+
 面試最後我問他們我還有什麼地方是可以加強的，他們第一句話就是說我非常優秀，三年能學到這樣已經比很多 Junior 強了（這真的讓我很感動），鼓勵的部分結束後，他們給我的建議是應該再多了解 React、Next 的底層在做什麼，可以常常觀察 Devtools 裡面的 Network Tab 到底傳了什麼東西過來。
 
 ![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-12.png)
