@@ -59,9 +59,10 @@ git 的部分也整理了一些筆記，不過沒 React 那麼多就是了。
 
 比較令我印象深刻的是有一題他們問 server component 跟 server side rendering (SSR) 差在哪裡，第一瞬間幾乎沒什麼靈感，想說不就是 server component 才會 server rendering 這樣嗎，思考一小段時間之後突然有一點想法回想起來之前在看 Next build 結果的時候就連 client component 也被標示成 SSR，於是我就有點免強的回答說：「client component 也會用到 SSR... 對吧？」，似乎應該是正確答案，不過感覺回答的很不完整。
 
-![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-8.png?raw=true)
 
 另外一個也讓我思考了蠻久的問題就是「`<Suspense>` 在 server component 的運作原理是什麼？它是如何做到載入好後把 fallback 替換成取得到的資料的？」，這題我就真的幾乎完全沒頭緒了，雖然大概給了一點零散地回答剛好提到了 streaming 這個詞，他們就說算是有擦到一點邊，對於這個沒回答出來的問題他們也好心的跟我解釋了 `Suspense` 到底是怎麼是怎麼運作的。
+
+![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-12.png?raw=true)
 
 剩下一些沒有回答的很好的問題還有，「有沒有自調整過 webpack 的 config」，我回答沒有，大多數情況下都是用 framework 的 default config。「web vitals 的評分項目」，雖然用過，但我幾乎忘光了。
 
@@ -72,7 +73,6 @@ git 的部分也整理了一些筆記，不過沒 React 那麼多就是了。
 
 面試最後我問他們我還有什麼地方是可以加強的，他們第一句話就是說我非常優秀，三年能學到這樣已經比很多 Junior 強了（這真的讓我很感動），鼓勵的部分結束後，他們給我的建議是應該再多了解 React、Next 的底層在做什麼，可以常常觀察 Devtools 裡面的 Network Tab 到底傳了什麼東西過來。
 
-![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-12.png?raw=true)
 
 ## 審核結果
 
