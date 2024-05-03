@@ -5,13 +5,13 @@
 ## 作業
 按照實習計畫的說明，在投遞履歷的同時，還需要附上「作業」，而這次的作業內容大概就是要建立一個可登入、發文然後串 Github API 的 blog 網頁。
 
-![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-10.png)
+![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-10.png?raw=true)
 
 我在開始製作這個作業時，其實對於 React 的了解其實幾乎趨近於零，沒有抱持的太大的期待就開始做下去了，想說就透過這個作業邊寫邊學 React 和 Next.js。
 
 過程中其實遇到不少困難，起初就是 `useEffect` 用得太差，導致出現一堆問題，網路上查了許多資料都沒辦法完美的解決我遇到的困難，直到發現了 [A Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/) 這篇文章，對英文不是很好的我來說，這超長的文章大概也花了我兩天的時間才讀完。幸運的是，這篇文章寫得非常詳細而且解決了我遇到的問題，感覺我就是基礎很不扎實吧。
 
-![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-2.png)
+![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-2.png?raw=true)
 
 除了 `useEffect` 以外，還遇到另外一個更棘手的就是 Next.js 的快取問題，每當我發布 blog 文章之後，無論怎麼重新載入我的文章都不會顯示出來。翻了 Next.js 的文件才發現快取系統怎麼這麼複雜，總之後來又花了一些時間把 Next.js 的文件都好好讀一一讀，最終稍微解決了這個問題，但解法似乎不是非常優雅。
 
@@ -21,7 +21,7 @@
 
 作業繳交上去幾天後，很順利的收到了面試通知，那時候看到這個超開心！
 
-![alt text](https://github.com/dada878/blog/blob/master/assets/dimage.png)
+![alt text](https://github.com/dada878/blog/blob/master/assets/dimage.png?raw=true)
 
 距離面試時間，還有兩週多，首先我上網查了一些資訊，看看之前的 Dcard 面試到底都做了什麼。因為某篇文章說建議去讀 React 底層的東西，於是我就找了 [React 技術揭密](https://react.iamkasong.com/) 這本電子書來讀，裡面真的提到了非常多很底層的東西，像是什麼 fiber node 之類的，不過最後還是看不太懂qwq，因此放棄了這本書。
 
@@ -29,19 +29,19 @@
 
 還在 Obsidian 整理了蠻多的筆記，感覺有機會可以公開出來。
 
-![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-4.png)
+![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-4.png?raw=true)
 
 大約一週的時間，我把 React 讀得差不多了，過程中其實發現了不少作業中可以優化的地方也改上去了。然後又再回去看一下之前面試的考古題，發現我對 Javascript 的了解似乎也不夠深，尤其時原型練之類的東西。最後根據 [某 Javascript 大師](https://YuRen-tw.github.io) 的推薦，讀了 [這個系列](https://openhome.cc/zh-tw/javascript/basics/) 的文章，真的挺優質的，很多其他地方看不到的內容裡面都有。這部分我比較多的時間可能都還是在研究原型鏈。
 
-![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-6.png)
+![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-6.png?raw=true)
 
 接下來也花了一些時間學 git 更進階的指令，[這個網站](https://learngitbranching.js.org/) 真的挺有意思的，到後面感覺很像在玩解謎遊戲。
 
-![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-7.png)
+![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-7.png?raw=true)
 
 git 的部分也整理了一些筆記，不過沒 React 那麼多就是了。
 
-![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-9.png)
+![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-9.png?raw=true)
 
 面試前兩三天，繼續查了一下考古題，看看 HR 面試的關卡會做什麼，但好像也沒查到什麼太有用的資訊。結果反而有點不知道要做什麼，於是就去處理了一些雜事，把之前 side project 想加的東西加上去、把還沒發佈的 chrome extension 給 publish 上去有的沒的。
 
@@ -53,13 +53,13 @@ git 的部分也整理了一些筆記，不過沒 React 那麼多就是了。
 
 這邊其實我覺得很多問題我都沒有回答得很好，或者是思考停頓了太久。
 
-![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-3.png)
+![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-3.png?raw=true)
 
 下一個階段是 Frontend Team 的面試，他們問了很多關於 React 的問題，包含 `useMemo`、`useCallback`、SSR、CSR、await async 跟 promise 差在哪、SSG、server component 跟 client component 的差別等等。
 
 比較令我印象深刻的是有一題他們問 server component 跟 server side rendering (SSR) 差在哪裡，第一瞬間幾乎沒什麼靈感，想說不就是 server component 才會 server rendering 這樣嗎，思考一小段時間之後突然有一點想法回想起來之前在看 Next build 結果的時候就連 client component 也被標示成 SSR，於是我就有點免強的回答說：「client component 也會用到 SSR... 對吧？」，似乎應該是正確答案，不過感覺回答的很不完整。
 
-![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-8.png)
+![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-8.png?raw=true)
 
 另外一個也讓我思考了蠻久的問題就是「`<Suspense>` 在 server component 的運作原理是什麼？它是如何做到載入好後把 fallback 替換成取得到的資料的？」，這題我就真的幾乎完全沒頭緒了，雖然大概給了一點零散地回答剛好提到了 streaming 這個詞，他們就說算是有擦到一點邊，對於這個沒回答出來的問題他們也好心的跟我解釋了 `Suspense` 到底是怎麼是怎麼運作的。
 
@@ -72,13 +72,13 @@ git 的部分也整理了一些筆記，不過沒 React 那麼多就是了。
 
 面試最後我問他們我還有什麼地方是可以加強的，他們第一句話就是說我非常優秀，三年能學到這樣已經比很多 Junior 強了（這真的讓我很感動），鼓勵的部分結束後，他們給我的建議是應該再多了解 React、Next 的底層在做什麼，可以常常觀察 Devtools 裡面的 Network Tab 到底傳了什麼東西過來。
 
-![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-12.png)
+![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-12.png?raw=true)
 
 ## 審核結果
 
 面試結束後的下一週，他們就寄了審核結果的資訊到我的信箱。
 
-![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-11.png)
+![alt text](https://github.com/dada878/blog/blob/master/assets/dimage-11.png?raw=true)
 
 打開來看到我沒有錄取，其實當初還蠻失望的，不過仔細這樣回過頭來看看這段時間發生的事，沒有錄取好像也挺合情合理的。至少在這個過程當中我真的學習到了非常多東西，了解到自己許多不足的地方，認識了所謂的「面試」到底是什麼，甚至還讓我從 0 學會了 React 跟 Next XD，再次感謝 Dcard 願意給我這次嘗試的機會 ><
 
